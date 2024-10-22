@@ -37,8 +37,9 @@ export const summarizeFlow = defineFlow(
       },
     ],
   },
-  async (url: string) => {
-    return url // NOTE: `url` is replaced by the image URL in the middleware
+  async (imageUrl: string) => {
+    // TODO: pass `imageUrl` to your LLM model
+    return imageUrl
   },
 )
 
